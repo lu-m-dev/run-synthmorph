@@ -1,6 +1,6 @@
 # SynthMorph Registration and Analysis Pipeline
 
-A Python pipeline for automated image registration using SynthMorph and subsequent tumor location analysis. The tool recursively processes directories containing neuroimaging data, generates registration scripts, and analyzes transformed tumor segmentations to determine anatomical locations.
+A Python pipeline for automated image registration using [SynthMorph]([synthmorph.io](https://martinos.org/malte/synthmorph/) and subsequent tumor location analysis. The tool recursively processes directories containing neuroimaging data, generates registration scripts, and analyzes transformed tumor segmentations to determine anatomical locations.
 
 ## Overview
 
