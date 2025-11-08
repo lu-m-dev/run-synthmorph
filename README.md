@@ -1,6 +1,6 @@
 # SynthMorph Registration and Analysis Pipeline
 
-A Python pipeline for automated image registration using SynthMorph and subsequent tumor location analysis. The tool recursively processes directories containing neuroimaging data, generates registration scripts, and analyzes transformed tumor segmentations to determine anatomical locations.
+A Python pipeline for automated image registration using [SynthMorph](https://martinos.org/malte/synthmorph/) and subsequent tumor location analysis. The tool recursively processes directories containing neuroimaging data, generates registration scripts, and analyzes transformed tumor segmentations to determine anatomical locations.
 
 ## Overview
 
@@ -20,9 +20,9 @@ This pipeline includes:
 ## Files
 
 ### Notebooks
-- `generate_script.ipynb`: Generates SynthMorph registration shell scripts
-- `analyze_output.ipynb`: Analyzes transformed segmentations for tumor location percentages
-- `visualize_overlay.ipynb`: Visualizes parcellation overlaid on atlas, transformed images overlaid on atlas, transformed tumor segmentaion overlaid on atlas
+- `generate_script.ipynb`: Generates SynthMorph registration shell script.
+- `analyze_output.ipynb`: Analyzes transformed segmentations for tumor location percentages. Percentages calculated as `[voxels overlapped with each label] / [total tumor voxels]`. The percentages do not sum up to 100%.
+- `visualize_overlay.ipynb`: Visualizes parcellation overlaid on atlas, transformed images overlaid on atlas, transformed tumor segmentaion overlaid on atlas.
 
 ### Configuration Files
 - `config.yaml`: Input/output paths and processing parameters
